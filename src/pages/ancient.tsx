@@ -43,22 +43,22 @@ export default function Ancient() {
           className={`${sectionCommonStyle} lg:pb-1 xl:pb-0`}
         />
 
-        <NewArrivalsProductFeed
+        {/* <NewArrivalsProductFeed
           demoVariant='ancient'
           hideProductDescription={true}
           showCategory={true}
           showRating={true}
           disableBorderRadius={true}
           className={sectionCommonStyle}
-        />
+        /> */}
 
-        <BannerBlockAncient
+        {/* <BannerBlockAncient
           disableBorderRadius={true}
           largeFirst={true}
           dataVariant='two'
           demoVariant='ancient'
           className={sectionCommonStyle}
-        />
+        /> */}
 
         <ProductsFeatured
           sectionHeading='text-featured-products'
@@ -70,23 +70,23 @@ export default function Ancient() {
           className={sectionCommonStyle}
         />
 
-        <BannerBlockAncient
+        {/* <BannerBlockAncient
           // className={`${sectionCommonStyle} lg:pb-1 xl:pb-0`}
           disableBorderRadius={true}
           demoVariant='ancient'
           spaceBetween={10}
           className={sectionCommonStyle}
-        />
+        /> */}
 
-        <BrandBlock
+        {/* <BrandBlock
           disableBorderRadius={true}
           sectionHeading='text-top-brands'
           showName={false}
           demoVariant='ancient'
           className={'mb-[14px] md:mb-6 lg:mb-7 xl:mb-8 2xl:mb-[45px]'}
-        />
+        /> */}
 
-        <ProductsFlashSaleBlock
+        {/* <ProductsFlashSaleBlock
           itemVariant='listSmall'
           disableSectionBorder={true}
           disableSectionPadding={true}
@@ -97,42 +97,42 @@ export default function Ancient() {
           disableBorderRadius={true}
           className={sectionCommonStyle}
           bgGray={true}
-        />
+        /> */}
       </Container>
 
-      <HireDesignerAncient />
+      {/* <HireDesignerAncient /> */}
 
       <Container>
-        <PopularProductFeed
+        {/* <PopularProductFeed
           disableBorderRadius={true}
           demoVariant='ancient'
           className={sectionCommonStyle}
-        />
+        /> */}
 
-        <DownloadApps
+        {/* <DownloadApps
           disableBorderRadius={true}
           className={`bg-app-pattern ${sectionCommonStyle}`}
           variant='ancient'
-        />
+        /> */}
 
-        <TestimonialCarousel
+        {/* <TestimonialCarousel
           sectionHeading='text-testimonial'
           type='list'
           className='relative mb-12 md:mb-14 xl:mb-16'
           disableBoarderRadius={true}
           reduceCardSpacing={true}
           demoVariant='ancient'
-        />
+        /> */}
 
-        <Instagram
+        {/* <Instagram
           disableContainerBorderRadius={true}
           className={`mb-11 lg:mb-12 xl:mb-14 2xl:mb-[75px] md:gap-[7px]`}
-        />
+        /> */}
 
-        <Subscription
+        {/* <Subscription
           disableBorderRadius={true}
           className='bg-opacity-0 px-5 sm:px-16 xl:px-0 mb-12 md:mb-14 xl:mb-16 !py-0 !md:py-0 !lg:py-0'
-        />
+        /> */}
       </Container>
     </>
   );

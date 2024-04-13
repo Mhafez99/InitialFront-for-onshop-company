@@ -34,10 +34,10 @@ export default function Home() {
     <>
       <HeroSlider data={banners} variantRounded='default' variant='fullWidth' />
       <Container>
-        <BannerBlock
+        {/* <BannerBlock
           data={bannerDataThree}
           className='mb-12 md:mb-14 xl:mb-16'
-        />
+        /> */}
         <CategoryBlockIcon
           sectionHeading='text-browse-categories'
           variant='modern'
@@ -47,24 +47,24 @@ export default function Home() {
           variant='combined'
           sectionHeading='text-featured-products'
         />
-        <ProductsFlashSaleCarousel />
-        <BannerCard
+        {/* <ProductsFlashSaleCarousel /> */}
+        {/* <BannerCard
           key={`banner--key${banner.id}`}
           banner={banner}
           href={`${ROUTES.COLLECTIONS}/${banner.slug}`}
           className='mb-12 md:mb-14 xl:mb-16 pb-0.5 md:pb-0 lg:pb-1 xl:pb-0 md:-mt-2.5'
-        />
-        <BrandGridBlock
+        /> */}
+        {/* <BrandGridBlock
           sectionHeading='text-top-brands'
           limit={12}
           variant='6column'
-        />
-        <ProductsTopBlock sectionHeading='text-top-products' />
-        <ExclusiveBlock variant='modern' />
-        <NewArrivalsProductFeed />
-        <TestimonialCarousel sectionHeading='text-testimonial' />
-        <CollectionBlock variant='modern' data={collection} />
-        <SubscriptionWithBg />
+        /> */}
+        {/* <ProductsTopBlock sectionHeading='text-top-products' /> */}
+        {/* <ExclusiveBlock variant='modern' /> */}
+        {/* <NewArrivalsProductFeed /> */}
+        {/* <TestimonialCarousel sectionHeading='text-testimonial' /> */}
+        {/* <CollectionBlock variant='modern' data={collection} /> */}
+        {/* <SubscriptionWithBg /> */}
       </Container>
     </>
   );

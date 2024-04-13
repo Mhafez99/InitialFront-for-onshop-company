@@ -25,10 +25,11 @@ import { SneakerIcon } from '@components/icons/sneaker-icon';
 
 export const siteSettings = {
   name: 'ChawkBazar',
-  description: 'Fastest E-commerce template built with React, NextJS, TypeScript, @tanstack/react-query and Tailwind CSS.',
+  description:
+    'Fastest E-commerce template built with React, NextJS, TypeScript, @tanstack/react-query and Tailwind CSS.',
   author: {
-    name: 'REDQ',
-    websiteUrl: 'https://redq.io',
+    name: 'OnShop',
+    // websiteUrl: 'https://redq.io',
     address: '',
   },
   logo: {
@@ -1126,37 +1127,37 @@ export const siteSettings = {
         id: 'ar',
         name: 'عربى - AR',
         value: 'ar',
-        icon: <SAFlag width="20px" height="15px" />,
+        icon: <SAFlag width='20px' height='15px' />,
       },
       {
         id: 'zh',
         name: '中国人 - ZH',
         value: 'zh',
-        icon: <CNFlag width="20px" height="15px" />,
+        icon: <CNFlag width='20px' height='15px' />,
       },
       {
         id: 'en',
         name: 'English - EN',
         value: 'en',
-        icon: <USFlag width="20px" height="15px" />,
+        icon: <USFlag width='20px' height='15px' />,
       },
       {
         id: 'de',
         name: 'Deutsch - DE',
         value: 'de',
-        icon: <DEFlag width="20px" height="15px" />,
+        icon: <DEFlag width='20px' height='15px' />,
       },
       {
         id: 'he',
         name: 'rעברית - HE',
         value: 'he',
-        icon: <ILFlag width="20px" height="15px" />,
+        icon: <ILFlag width='20px' height='15px' />,
       },
       {
         id: 'es',
         name: 'Español - ES',
         value: 'es',
-        icon: <ESFlag width="20px" height="15px" />,
+        icon: <ESFlag width='20px' height='15px' />,
       },
     ],
     categoryMenu: [
@@ -2910,7 +2911,7 @@ export const siteSettings = {
         id: 1,
         path: '/search',
         label: 'menu-deals-today',
-        icon: <ThunderIcon className="w-3 h-auto" />,
+        icon: <ThunderIcon className='w-3 h-auto' />,
       },
       {
         id: 2,

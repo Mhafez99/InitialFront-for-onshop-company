@@ -53,7 +53,7 @@ export default function Layout({ children }: React.PropsWithChildren<{}>) {
         }}>
         {children}
       </main>
-      {/* <Footer /> */}
+      <Footer />
       <MobileNavigation />
       {/* <Search /> */}
       <CookieBar

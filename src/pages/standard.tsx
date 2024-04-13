@@ -42,26 +42,26 @@ export default function Home() {
     <>
       <HeroBlock />
       <Container>
-        <FlashSaleBlock />
-        <BannerCarouselBlock bannerData={promotionBanners} />
-        <CategoryBlock sectionHeading="text-shop-by-category" />
-        <Divider />
-        <BestSellerProductFeed />
-        <BannerCard
+        {/* <FlashSaleBlock /> */}
+        {/* <BannerCarouselBlock bannerData={promotionBanners} /> */}
+        <CategoryBlock sectionHeading='text-shop-by-category' />
+        {/* <Divider /> */}
+        {/* <BestSellerProductFeed /> */}
+        {/* <BannerCard
           key={`banner--key${banner.id}`}
           banner={banner}
           href={`${ROUTES.COLLECTIONS}/${banner.slug}`}
-          className="mb-12 lg:mb-14 xl:mb-16 pb-0.5 lg:pb-1 xl:pb-0"
-          classNameInner="h-28 sm:h-auto"
-        />
-        <NewArrivalsProductFeed />
+          className='mb-12 lg:mb-14 xl:mb-16 pb-0.5 lg:pb-1 xl:pb-0'
+          classNameInner='h-28 sm:h-auto'
+        /> */}
+        {/* <NewArrivalsProductFeed /> */}
         <Divider />
-        <BrandBlock sectionHeading="text-top-brands" />
+        {/* <BrandBlock sectionHeading='text-top-brands' /> */}
         <CollectionBlock data={collection} />
-        <FeatureBlock />
-        <DownloadApps className="bg-linen" />
-        <Support />
-        <Subscription className="px-5 bg-linen sm:px-8 md:px-16 2xl:px-24" />
+        {/* <FeatureBlock /> */}
+        {/* <DownloadApps className='bg-linen' /> */}
+        {/* <Support /> */}
+        {/* <Subscription className="px-5 bg-linen sm:px-8 md:px-16 2xl:px-24" /> */}
       </Container>
     </>
   );
@@ -73,23 +73,23 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
 
   await queryClient.prefetchQuery({
     queryKey: [API_ENDPOINTS.FLASH_SALE_PRODUCTS, { limit: 10 }],
-    queryFn: fetchFlashSaleProducts
+    queryFn: fetchFlashSaleProducts,
   });
   await queryClient.prefetchQuery({
     queryKey: [API_ENDPOINTS.CATEGORIES, { limit: 10 }],
-    queryFn: fetchCategories
+    queryFn: fetchCategories,
   });
   await queryClient.prefetchQuery({
     queryKey: [API_ENDPOINTS.NEW_ARRIVAL_PRODUCTS, { limit: 10 }],
-    queryFn: fetchNewArrivalProducts
+    queryFn: fetchNewArrivalProducts,
   });
   await queryClient.prefetchQuery({
     queryKey: [API_ENDPOINTS.BRANDS, { limit: 0 }],
-    queryFn: fetchBrands
+    queryFn: fetchBrands,
   });
   await queryClient.prefetchQuery({
     queryKey: [API_ENDPOINTS.BEST_SELLER_PRODUCTS, { limit: 10 }],
-    queryFn: fetchBestSellerProducts
+    queryFn: fetchBestSellerProducts,
   });
 
   return {

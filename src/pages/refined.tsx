@@ -35,36 +35,49 @@ export default function Home() {
       <Container>
         <HeroWithCategory
           bannerData={heroBanner}
-          paginationPosition="left"
-          className="hero-slider-pagination-area mb-12 md:mb-14 xl:mb-16"
+          paginationPosition='left'
+          className='hero-slider-pagination-area mb-12 md:mb-14 xl:mb-16'
         />
-        <BrandBlock sectionHeading="text-top-brands" />
+        <BrandBlock sectionHeading='text-top-brands' />
         <SaleBannerWithProducts
-          sectionHeading="text-on-selling-products"
-          categorySlug="/search"
-          variant="center"
+          sectionHeading='text-on-selling-products'
+          categorySlug='/search'
+          variant='center'
         />
-        <ProductsFeatured variant="flat" sectionHeading="text-featured-products" limit={8} />
-        <BannerBlock data={bannerDataFour} className="mb-12 md:mb-14 xl:mb-16 hidden sm:flex" />
-        <BannerBlock data={bannerDataFourMobile} className="mb-12 md:mb-14 xl:mb-16 sm:hidden" />
-        <CategoryBlockIcon sectionHeading="text-browse-categories" variant="circle" />
-        <NewArrivalsProductFeed />
-        <BannerCard
+        {/* <ProductsFeatured
+          variant='flat'
+          sectionHeading='text-featured-products'
+          limit={8}
+        /> */}
+        {/* <BannerBlock
+          data={bannerDataFour}
+          className='mb-12 md:mb-14 xl:mb-16 hidden sm:flex'
+        /> */}
+        {/* <BannerBlock
+          data={bannerDataFourMobile}
+          className='mb-12 md:mb-14 xl:mb-16 sm:hidden'
+        /> */}
+        {/* <CategoryBlockIcon
+          sectionHeading='text-browse-categories'
+          variant='circle'
+        /> */}
+        {/* <NewArrivalsProductFeed /> */}
+        {/* <BannerCard
           banner={bannerWinter}
           href={`${ROUTES.COLLECTIONS}/${bannerWinter.slug}`}
-          className="mb-12 lg:mb-14 xl:mb-16 pb-0.5 lg:pb-1 xl:pb-0"
-        />
-        <ProductsFlashSaleCarousel />
-        <ProductsTopBlock sectionHeading="text-top-products" />
-        <CollectionBlock variant="modern" data={collection} />
-        <BannerCard
+          className='mb-12 lg:mb-14 xl:mb-16 pb-0.5 lg:pb-1 xl:pb-0'
+        /> */}
+        {/* <ProductsFlashSaleCarousel /> */}
+        {/* <ProductsTopBlock sectionHeading='text-top-products' /> */}
+        {/* <CollectionBlock variant='modern' data={collection} /> */}
+        {/* <BannerCard
           banner={banner}
           href={`${ROUTES.COLLECTIONS}/${banner.slug}`}
-          className="mb-12 lg:mb-14 xl:mb-16 pb-0.5 lg:pb-1 xl:pb-0"
-        />
-        <TestimonialCarousel sectionHeading="text-testimonial" />
-        <Instagram className="mb-12 md:mb-14 xl:mb-16" />
-        <SubscriptionWithBg />
+          className='mb-12 lg:mb-14 xl:mb-16 pb-0.5 lg:pb-1 xl:pb-0'
+        /> */}
+        {/* <TestimonialCarousel sectionHeading='text-testimonial' /> */}
+        {/* <Instagram className='mb-12 md:mb-14 xl:mb-16' /> */}
+        {/* <SubscriptionWithBg /> */}
       </Container>
     </>
   );
@@ -76,25 +89,30 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
 
   await queryClient.prefetchQuery({
     queryKey: [API_ENDPOINTS.FLASH_SALE_PRODUCTS, { limit: 10 }],
-    queryFn: fetchFlashSaleProducts
+    queryFn: fetchFlashSaleProducts,
   });
   await queryClient.prefetchQuery({
     queryKey: [API_ENDPOINTS.CATEGORIES, { limit: 10 }],
-    queryFn: fetchCategories
+    queryFn: fetchCategories,
   });
   await queryClient.prefetchQuery({
     queryKey: [API_ENDPOINTS.NEW_ARRIVAL_PRODUCTS, { limit: 10 }],
-    queryFn: fetchNewArrivalProducts
+    queryFn: fetchNewArrivalProducts,
   });
   await queryClient.prefetchQuery({
     queryKey: [API_ENDPOINTS.BRANDS, { limit: 0 }],
-    queryFn: fetchBrands
+    queryFn: fetchBrands,
   });
 
   return {
     props: {
       dehydratedState: JSON.parse(JSON.stringify(dehydrate(queryClient))),
-      ...(await serverSideTranslations(locale!, ['common', 'forms', 'menu', 'footer'])),
+      ...(await serverSideTranslations(locale!, [
+        'common',
+        'forms',
+        'menu',
+        'footer',
+      ])),
     },
     revalidate: 60,
   };

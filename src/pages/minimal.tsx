@@ -42,23 +42,23 @@ export default function Home() {
       <HeroWithCategory bannerData={heroBanner} />
       <ProductsWithFlashSale carouselBreakpoint={flashSaleCarouselBreakpoint} />
       <BannerGridBlock />
-      <CategoryGridBlock sectionHeading="text-featured-categories" />
-      <Divider />
-      <BestSellerProductFeed />
-      <BannerCard
+      {/* <CategoryGridBlock sectionHeading='text-featured-categories' /> */}
+      {/* <Divider /> */}
+      {/* <BestSellerProductFeed /> */}
+      {/* <BannerCard
         key={`banner--key${banner.id}`}
         banner={banner}
         href={`${ROUTES.COLLECTIONS}/${banner.slug}`}
-        className="mb-12 lg:mb-14 xl:mb-16 pb-0.5 lg:pb-1 xl:pb-0"
-      />
-      <NewArrivalsProductFeed />
-      <Divider />
-      <BrandBlock sectionHeading="text-top-brands" />
-      <FeatureBlock />
-      <CollectionBlock data={collection} />
-      <DownloadApps />
-      <Support />
-      <Subscription />
+        className='mb-12 lg:mb-14 xl:mb-16 pb-0.5 lg:pb-1 xl:pb-0'
+      /> */}
+      {/* <NewArrivalsProductFeed /> */}
+      {/* <Divider /> */}
+      {/* <BrandBlock sectionHeading='text-top-brands' /> */}
+      {/* <FeatureBlock /> */}
+      {/* <CollectionBlock data={collection} /> */}
+      {/* <DownloadApps /> */}
+      {/* <Support /> */}
+      {/* <Subscription /> */}
     </Container>
   );
 }

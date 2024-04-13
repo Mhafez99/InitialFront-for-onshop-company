@@ -9,12 +9,12 @@ import { GetStaticProps } from 'next';
 export default function SignInPage() {
   return (
     <>
-      <PageHeader pageHeader="Sign In" />
+      <PageHeader pageHeader='Sign In' />
       <Container>
-        <div className="py-16 lg:py-20">
+        <div className='py-16 lg:py-20'>
           <LoginForm />
         </div>
-        <Subscription />
+        {/* <Subscription /> */}
       </Container>
     </>
   );
@@ -25,7 +25,12 @@ SignInPage.Layout = Layout;
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale!, ['common', 'forms', 'menu', 'footer'])),
+      ...(await serverSideTranslations(locale!, [
+        'common',
+        'forms',
+        'menu',
+        'footer',
+      ])),
     },
   };
 };

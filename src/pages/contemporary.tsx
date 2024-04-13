@@ -39,61 +39,61 @@ export default function Home() {
     <>
       <HeroSlider
         data={banners}
-        variantRounded="default"
-        variant="fullWidth"
-        prevNextButtons="none"
-        className="!mb-12 !md:mb-14 !xl:mb-[60px]"
+        variantRounded='default'
+        variant='fullWidth'
+        prevNextButtons='none'
+        className='!mb-12 !md:mb-14 !xl:mb-[60px]'
       />
-      <Container className="border-b-2 border[#E6E6E6]">
+      <Container className='border-b-2 border[#E6E6E6]'>
         <CategoryBlockIcon
-          sectionHeading="text-browse-categories"
-          variant="list"
+          sectionHeading='text-browse-categories'
+          variant='list'
         />
-        <SaleBannerGrid
+        {/* <SaleBannerGrid
           data={bannerDataContemporary}
-          className="mb-12 md:mb-14 xl:mb-16"
-        />
+          className='mb-12 md:mb-14 xl:mb-16'
+        /> */}
         <NewArrivalsProductFeedWithTabs />
-        <BrandTimerBlock
-          sectionHeading="text-top-brands-deal"
-          className="mb-12 md:mb-14 xl:mb-16"
-        />
-        <ProductsFeatured
+        {/* <BrandTimerBlock
+          sectionHeading='text-top-brands-deal'
+          className='mb-12 md:mb-14 xl:mb-16'
+        /> */}
+        {/* <ProductsFeatured
           limit={3}
-          variant="modern"
-          sectionHeading="text-featured-products"
-        />
-        <BannerCard
+          variant='modern'
+          sectionHeading='text-featured-products'
+        /> */}
+        {/* <BannerCard
           key={`banner--key${banner.id}`}
           banner={contemporaryBanner1}
           href={`${ROUTES.COLLECTIONS}/${banner.slug}`}
-          className="mb-12 md:mb-14 xl:mb-16 pb-0.5 md:pb-0 lg:pb-1 xl:pb-0 md:-mt-2.5"
-        />
-        <TrendingProductFeedWithTabs />
-        <BannerCard
+          className='mb-12 md:mb-14 xl:mb-16 pb-0.5 md:pb-0 lg:pb-1 xl:pb-0 md:-mt-2.5'
+        /> */}
+        {/* <TrendingProductFeedWithTabs /> */}
+        {/* <BannerCard
           key={`banner--key1${banner.id}`}
           banner={contemporaryBanner2}
           href={`${ROUTES.COLLECTIONS}/${banner.slug}`}
-          className="mb-12 md:mb-14 xl:mb-16 pb-0.5 md:pb-0 lg:pb-1 xl:pb-0 md:-mt-2.5"
-        />
+          className='mb-12 md:mb-14 xl:mb-16 pb-0.5 md:pb-0 lg:pb-1 xl:pb-0 md:-mt-2.5'
+        /> */}
 
-        <CollectionBlock
-          variant="trendy"
+        {/* <CollectionBlock
+          variant='trendy'
           data={collection}
-          sectionHeading="text-trending-collection"
-        />
-        <RecentProductFeed />
-        <DownloadApps
-          className="mb-12 bg-app-pattern md:mb-14 xl:mb-16"
-          variant="modern"
-        />
-        <TestimonialCarousel
-          sectionHeading="text-testimonial"
-          type="list"
-          className="relative mb-12 md:mb-14 xl:mb-16"
-        />
-        <Instagram className="mb-4 md:mb-5 xl:mb-16" variant="rounded" />
-        <Subscription className="bg-opacity-0 px-5 sm:px-16 xl:px-0 mb-12 md:mb-14 xl:mb-16 lg:mt-16 mt-12 !py-0 !md:py-0 !lg:py-0" />
+          sectionHeading='text-trending-collection'
+        /> */}
+        {/* <RecentProductFeed /> */}
+        {/* <DownloadApps
+          className='mb-12 bg-app-pattern md:mb-14 xl:mb-16'
+          variant='modern'
+        /> */}
+        {/* <TestimonialCarousel
+          sectionHeading='text-testimonial'
+          type='list'
+          className='relative mb-12 md:mb-14 xl:mb-16'
+        /> */}
+        {/* <Instagram className='mb-4 md:mb-5 xl:mb-16' variant='rounded' /> */}
+        {/* <Subscription className="bg-opacity-0 px-5 sm:px-16 xl:px-0 mb-12 md:mb-14 xl:mb-16 lg:mt-16 mt-12 !py-0 !md:py-0 !lg:py-0" /> */}
       </Container>
     </>
   );
@@ -105,19 +105,19 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
 
   await queryClient.prefetchQuery({
     queryKey: [API_ENDPOINTS.FLASH_SALE_PRODUCTS, { limit: 10 }],
-    queryFn: fetchFlashSaleProducts
+    queryFn: fetchFlashSaleProducts,
   });
   await queryClient.prefetchQuery({
     queryKey: [API_ENDPOINTS.CATEGORIES, { limit: 10 }],
-    queryFn: fetchCategories
+    queryFn: fetchCategories,
   });
   await queryClient.prefetchQuery({
     queryKey: [API_ENDPOINTS.NEW_ARRIVAL_PRODUCTS, { limit: 10 }],
-    queryFn: fetchNewArrivalProducts
+    queryFn: fetchNewArrivalProducts,
   });
   await queryClient.prefetchQuery({
     queryKey: [API_ENDPOINTS.BRANDS, { limit: 0 }],
-    queryFn: fetchBrands
+    queryFn: fetchBrands,
   });
 
   return {

@@ -96,4 +96,5 @@ For other hosting providers, refer to the [Next.js Documentation](https://nextjs
 
 Enjoy using ChawkBazar for your e-commerce project!
 
-https://www.google.com/url?sa=i&url=https%3A%2F%2Fredq.io%2Fchawkbazar-react&psig=AOvVaw2wOe2nI5RrYqAZFsyeMdAY&ust=1715427850810000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKC1yO-Ag4YDFQAAAAAdAAAAABAX
+![image](https://github.com/Mhafez99/InitialFront-for-onshop-company/assets/76824315/86d16b4f-ce76-4593-bd2f-bd0086fd53a5)
+

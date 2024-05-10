@@ -1,4 +1,4 @@
-# ChawkBazar Documentation
+# OnShop Frontend Design
 
 ## Introduction
 
@@ -75,6 +75,7 @@ ChawkBazar supports multiple languages using the next-i18next package. Add langu
 
 The RTL (Right-to-Left) layout is supported. Modify `/src/utils/get-direction.ts` according to your needs.
 
+
 ## Data Fetching
 
 We've used @tanstack/react-query for data fetching. While we've provided basic REST API integration, you'll need to customize it for your actual API endpoints. Find more details in the documentation.
@@ -94,3 +95,5 @@ For more information on deploying with Vercel, visit [Vercel Documentation](http
 For other hosting providers, refer to the [Next.js Documentation](https://nextjs.org/docs/deployment).
 
 Enjoy using ChawkBazar for your e-commerce project!
+
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fredq.io%2Fchawkbazar-react&psig=AOvVaw2wOe2nI5RrYqAZFsyeMdAY&ust=1715427850810000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKC1yO-Ag4YDFQAAAAAdAAAAABAX
